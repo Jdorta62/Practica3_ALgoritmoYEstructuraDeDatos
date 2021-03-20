@@ -158,7 +158,8 @@ template<class T> void vector_t<T>::set_val(const int i, const T d) {
  * @param i posición del vector que se quiere conocer o sobreescribir.
  */
 template<class T> T& vector_t<T>::at(const int i) {
-  assert(i >= 0 && i < get_size());
+  assert(i >= 0);
+  assert(i < get_size());
   return v_[i];
 }
 
@@ -175,8 +176,7 @@ template<class T> T& vector_t<T>::operator[](const int i) {
  * @param i posición del vector que se quiere conocer.
  */
 template<class T> const T& vector_t<T>::at(const int i) const {
-  assert(i >= 0);
-  assert(i < get_size());
+  assert(i >= 0 && i < get_size());
   return v_[i];
 }
 
