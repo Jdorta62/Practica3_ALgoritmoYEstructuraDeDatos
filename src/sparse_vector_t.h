@@ -81,7 +81,7 @@ sparse_vector_t::sparse_vector_t(const int n) : pv_(n), nz_(0), n_(n) {}
  * @param v vector denso que se va a convertir a un vector disperso.
  * @param eps constante que indica el error que puede permitir un cálculo. 
  */
-sparse_vector_t::sparse_vector_t(const vector_t<double>& v, const double eps = EPS) : pv_(), nz_(0), n_(0) {
+sparse_vector_t::sparse_vector_t(const vector_t<double>& v, const double eps) : pv_(), nz_(0), n_(0) {
   n_ = v.get_size();
   nz_ = 0;
   
@@ -91,7 +91,7 @@ sparse_vector_t::sparse_vector_t(const vector_t<double>& v, const double eps = E
     }
   pv_.resize(nz_);
 
-  for (int i{0}; i < nz_; ++i) {
+  for (int i{0}; i < v.get_size(); ++i) {
     if (IsNotZero(v[i], eps)) {
       pair_double_t pair_stock(v[i], i);
       pv_[i] = pair_stock;
