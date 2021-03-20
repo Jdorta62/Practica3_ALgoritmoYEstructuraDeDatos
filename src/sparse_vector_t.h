@@ -89,15 +89,15 @@ sparse_vector_t::sparse_vector_t(const vector_t<double>& v, const double eps) : 
     if (IsNotZero(v[i], eps)) {
       ++nz_;
     }
+  }
   pv_.resize(nz_);
-
-  for (int i{0},j{0}; i < v.get_size(); ++i) {
+  int j{0};
+  for (int i{0}; i < v.get_size(); ++i) {
     if (IsNotZero(v[i], eps)) {
       pair_double_t pair_stock(v[i], i);
       pv_[j] = pair_stock;
       ++j;
     }
-  }
   }
 
 }
