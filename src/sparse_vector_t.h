@@ -94,7 +94,7 @@ sparse_vector_t::sparse_vector_t(const vector_t<double>& v, const double eps) : 
   for (int i{0}; i < v.get_size(); ++i) {
     if (IsNotZero(v[i], eps)) {
       pair_double_t pair_stock(v[i], i);
-      pv_[i] = pair_stock;
+      pv_.at(i) = pair_stock;
     }
   }
   }
