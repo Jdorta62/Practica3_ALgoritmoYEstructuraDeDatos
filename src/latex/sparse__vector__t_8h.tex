@@ -1,0 +1,92 @@
+\hypertarget{sparse__vector__t_8h}{}\section{sparse\+\_\+vector\+\_\+t.\+h File Reference}
+\label{sparse__vector__t_8h}\index{sparse\+\_\+vector\+\_\+t.\+h@{sparse\+\_\+vector\+\_\+t.\+h}}
+
+
+programa proporcionado por el profesorado para realizar la práctica 3 de Algoritmos y estructura de datos  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vector\+\_\+t.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pair\+\_\+t.\+h\char`\"{}}\newline
+Include dependency graph for sparse\+\_\+vector\+\_\+t.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sparse__vector__t_8h_a6ebf6899d6c1c8b7b9d09be872c05aae}\label{sparse__vector__t_8h_a6ebf6899d6c1c8b7b9d09be872c05aae}} 
+\#define {\bfseries E\+PS}~1.\+0e-\/6
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sparse__vector__t_8h_a2e126a0c8b9825e8e5fbdf54ca8e1590}\label{sparse__vector__t_8h_a2e126a0c8b9825e8e5fbdf54ca8e1590}} 
+typedef \hyperlink{classpair__t}{pair\+\_\+t}$<$ double $>$ {\bfseries pair\+\_\+double\+\_\+t}
+\item 
+\mbox{\Hypertarget{sparse__vector__t_8h_a056085ae429122f21b5d9aeca5ea8b5e}\label{sparse__vector__t_8h_a056085ae429122f21b5d9aeca5ea8b5e}} 
+typedef \hyperlink{classvector__t}{vector\+\_\+t}$<$ \hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} $>$ {\bfseries pair\+\_\+vector\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{sparse__vector__t_8h_ab7e7e47ca27b530e561e173ff4158288}{Is\+Not\+Zero} (const double val, const double eps=E\+PS)
+\begin{DoxyCompactList}\small\item\em función que retorna si un determinado valor es 0. \end{DoxyCompactList}\item 
+std\+::ostream \& \hyperlink{sparse__vector__t_8h_a5e140e3ddb67ea6f89871684c3f50ed3}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \&sv)
+\begin{DoxyCompactList}\small\item\em sobrecarga del operador de inserción $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+programa proporcionado por el profesorado para realizar la práctica 3 de Algoritmos y estructura de datos 
+
+Universidad de La Laguna Escuela Superior de Ingeniería y Tecnología Grado en Ingeniería Informática Informática Básica
+
+\begin{DoxyAuthor}{Author}
+Jose Dorta Luis \href{mailto:alu0101414676@ull.edu.es}{\tt alu0101414676@ull.\+edu.\+es} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 March 2021 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000003}{Bug}]ningún bug conocido\end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sparse__vector__t_8h_ab7e7e47ca27b530e561e173ff4158288}\label{sparse__vector__t_8h_ab7e7e47ca27b530e561e173ff4158288}} 
+\index{sparse\+\_\+vector\+\_\+t.\+h@{sparse\+\_\+vector\+\_\+t.\+h}!Is\+Not\+Zero@{Is\+Not\+Zero}}
+\index{Is\+Not\+Zero@{Is\+Not\+Zero}!sparse\+\_\+vector\+\_\+t.\+h@{sparse\+\_\+vector\+\_\+t.\+h}}
+\subsubsection{\texorpdfstring{Is\+Not\+Zero()}{IsNotZero()}}
+{\footnotesize\ttfamily bool Is\+Not\+Zero (\begin{DoxyParamCaption}\item[{const double}]{val,  }\item[{const double}]{eps = {\ttfamily EPS} }\end{DoxyParamCaption})}
+
+
+
+función que retorna si un determinado valor es 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & valor a comprobar si es 0 o no. \\
+\hline
+{\em eps} & valor mínimo a partir del cual un número se considera 0. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sparse__vector__t_8h_a5e140e3ddb67ea6f89871684c3f50ed3}\label{sparse__vector__t_8h_a5e140e3ddb67ea6f89871684c3f50ed3}} 
+\index{sparse\+\_\+vector\+\_\+t.\+h@{sparse\+\_\+vector\+\_\+t.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!sparse\+\_\+vector\+\_\+t.\+h@{sparse\+\_\+vector\+\_\+t.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \&}]{sv }\end{DoxyParamCaption})}
+
+
+
+sobrecarga del operador de inserción $<$$<$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sv} & objeto de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} que será insertado en el flujo. \\
+\hline
+\end{DoxyParams}

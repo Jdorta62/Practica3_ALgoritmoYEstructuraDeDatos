@@ -1,0 +1,38 @@
+\hypertarget{pair__t_8h}{}\section{pair\+\_\+t.\+h File Reference}
+\label{pair__t_8h}\index{pair\+\_\+t.\+h@{pair\+\_\+t.\+h}}
+
+
+programa proporcionado por el profesorado para realizar la práctica 3 de Algoritmos y estructura de datos  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for pair\+\_\+t.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpair__t}{pair\+\_\+t$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pair__t_8h_ae5a1b33f15125ba561fae7f4b3633253}\label{pair__t_8h_ae5a1b33f15125ba561fae7f4b3633253}} 
+{\footnotesize template$<$class T $>$ }\\std\+::ostream \& \hyperlink{pair__t_8h_ae5a1b33f15125ba561fae7f4b3633253}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classpair__t}{pair\+\_\+t}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em sobrecarga del operacor de inserción $<$$<$ que permite insertar en el flujo un objeto \hyperlink{classpair__t}{pair\+\_\+t}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+programa proporcionado por el profesorado para realizar la práctica 3 de Algoritmos y estructura de datos 
+
+Universidad de La Laguna Escuela Superior de Ingeniería y Tecnología Grado en Ingeniería Informática Informática Básica
+
+\begin{DoxyAuthor}{Author}
+Jose Dorta Luis \href{mailto:alu0101414676@ull.edu.es}{\tt alu0101414676@ull.\+edu.\+es} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 March 2021 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]ningún bug conocido\end{DoxyRefDesc}

@@ -1,0 +1,75 @@
+\hypertarget{vector__t_8h}{}\section{vector\+\_\+t.\+h File Reference}
+\label{vector__t_8h}\index{vector\+\_\+t.\+h@{vector\+\_\+t.\+h}}
+
+
+programa proporcionado por el profesorado para realizar la práctica 3 de Algoritmos y estructura de datos  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+Include dependency graph for vector\+\_\+t.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvector__t}{vector\+\_\+t$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::istream \& \hyperlink{vector__t_8h_acd9e467537bfeaa978d04ca176784a6f}{operator$>$$>$} (std\+::istream \&is, \hyperlink{classvector__t}{vector\+\_\+t}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em sobrecarga del operador de extracción $>$$>$ \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\std\+::ostream \& \hyperlink{vector__t_8h_a49b340c279907a465707ce2b5526be88}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classvector__t}{vector\+\_\+t}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em sobrecarga del operador de inserción $<$$<$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+programa proporcionado por el profesorado para realizar la práctica 3 de Algoritmos y estructura de datos 
+
+Universidad de La Laguna Escuela Superior de Ingeniería y Tecnología Grado en Ingeniería Informática Informática Básica
+
+\begin{DoxyAuthor}{Author}
+Jose Dorta Luis \href{mailto:alu0101414676@ull.edu.es}{\tt alu0101414676@ull.\+edu.\+es} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 March 2021 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]ningún bug conocido\end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vector__t_8h_a49b340c279907a465707ce2b5526be88}\label{vector__t_8h_a49b340c279907a465707ce2b5526be88}} 
+\index{vector\+\_\+t.\+h@{vector\+\_\+t.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vector\+\_\+t.\+h@{vector\+\_\+t.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classvector__t}{vector\+\_\+t}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+sobrecarga del operador de inserción $<$$<$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & vector que se insertará en el flujo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vector__t_8h_acd9e467537bfeaa978d04ca176784a6f}\label{vector__t_8h_acd9e467537bfeaa978d04ca176784a6f}} 
+\index{vector\+\_\+t.\+h@{vector\+\_\+t.\+h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!vector\+\_\+t.\+h@{vector\+\_\+t.\+h}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\hyperlink{classvector__t}{vector\+\_\+t}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+sobrecarga del operador de extracción $>$$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & vector que donde se almacenará la infromación que se extraiga \\
+\hline
+\end{DoxyParams}

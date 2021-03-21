@@ -1,0 +1,156 @@
+\hypertarget{classsparse__vector__t}{}\section{sparse\+\_\+vector\+\_\+t Class Reference}
+\label{classsparse__vector__t}\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+
+
+Inheritance diagram for sparse\+\_\+vector\+\_\+t\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsparse__vector__t_a0708afb6f0b69cfaf7b3583452a6913b}\label{classsparse__vector__t_a0708afb6f0b69cfaf7b3583452a6913b}} 
+\hyperlink{classsparse__vector__t_a0708afb6f0b69cfaf7b3583452a6913b}{sparse\+\_\+vector\+\_\+t} (const int=0)
+\begin{DoxyCompactList}\small\item\em constructor por de defecto de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t}. \end{DoxyCompactList}\item 
+\hyperlink{classsparse__vector__t_a2265c18c50a8788d631ee584873b1d88}{sparse\+\_\+vector\+\_\+t} (const \hyperlink{classvector__t}{vector\+\_\+t}$<$ double $>$ \&, const double=E\+PS)
+\begin{DoxyCompactList}\small\item\em constructor de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \end{DoxyCompactList}\item 
+\hyperlink{classsparse__vector__t_a94f58b310542bbd9f781c6667fb89d06}{sparse\+\_\+vector\+\_\+t} (const \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \&)
+\begin{DoxyCompactList}\small\item\em constructor de copia que inicializa un objeto \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} a través de la sobrecarga de operador =. \end{DoxyCompactList}\item 
+\hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \& \hyperlink{classsparse__vector__t_a5af8b6772b5e21b427ba8db08742ff9b}{operator=} (const \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \&)
+\begin{DoxyCompactList}\small\item\em sobrecarga del operador =. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsparse__vector__t_aef77250d3913eac1f2852ad66222deb6}\label{classsparse__vector__t_aef77250d3913eac1f2852ad66222deb6}} 
+\hyperlink{classsparse__vector__t_aef77250d3913eac1f2852ad66222deb6}{$\sim$sparse\+\_\+vector\+\_\+t} ()
+\begin{DoxyCompactList}\small\item\em destructor de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsparse__vector__t_a31677204e3f0e2002d162ceb21e4522a}\label{classsparse__vector__t_a31677204e3f0e2002d162ceb21e4522a}} 
+int \hyperlink{classsparse__vector__t_a31677204e3f0e2002d162ceb21e4522a}{get\+\_\+nz} (void) const
+\begin{DoxyCompactList}\small\item\em getter de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} que retorna el valor del atributo privado nz\+\_\+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsparse__vector__t_ae4e2610cc211f86639c758c2f0a03ae5}\label{classsparse__vector__t_ae4e2610cc211f86639c758c2f0a03ae5}} 
+int \hyperlink{classsparse__vector__t_ae4e2610cc211f86639c758c2f0a03ae5}{get\+\_\+n} (void) const
+\begin{DoxyCompactList}\small\item\em getter de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} que retorna el valor del atributo privado n\+\_\+ \end{DoxyCompactList}\item 
+\hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& \hyperlink{classsparse__vector__t_a060ab319f62aa0a6dd711f9d87d990f3}{at} (const int)
+\begin{DoxyCompactList}\small\item\em getter-\/setter de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} que retorna o inicializa el valor de una posición determinada del vector. \end{DoxyCompactList}\item 
+\hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& \hyperlink{classsparse__vector__t_a6ebb64d89a60aac881dcb62dfefaa398}{operator\mbox{[}$\,$\mbox{]}} (const int)
+\begin{DoxyCompactList}\small\item\em sobrecarga del operador \mbox{[}\mbox{]} (permite inializar o conocer un valor del vector dado por su posición) \end{DoxyCompactList}\item 
+const \hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& \hyperlink{classsparse__vector__t_a33f0b1b839db166e01023915c1d97d39}{at} (const int) const
+\begin{DoxyCompactList}\small\item\em getter de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} que retorna el valor de una posición determinada del vector. \end{DoxyCompactList}\item 
+const \hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& \hyperlink{classsparse__vector__t_a158bad89a8bc495ff018b32bf13fe44d}{operator\mbox{[}$\,$\mbox{]}} (const int) const
+\begin{DoxyCompactList}\small\item\em sobrecarga constante del operador \mbox{[}\mbox{]} (permite conocer un valor del vector dado por su posición) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsparse__vector__t_a5eb0190021a32c6389f5bf3f3cd945aa}\label{classsparse__vector__t_a5eb0190021a32c6389f5bf3f3cd945aa}} 
+void \hyperlink{classsparse__vector__t_a5eb0190021a32c6389f5bf3f3cd945aa}{write} (std\+::ostream \&=std\+::cout) const
+\begin{DoxyCompactList}\small\item\em método que permite insertar en el flujo un objeto \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} e imprimirlo en pantalla \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsparse__vector__t_a2265c18c50a8788d631ee584873b1d88}\label{classsparse__vector__t_a2265c18c50a8788d631ee584873b1d88}} 
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\subsubsection{\texorpdfstring{sparse\+\_\+vector\+\_\+t()}{sparse\_vector\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sparse\+\_\+vector\+\_\+t\+::sparse\+\_\+vector\+\_\+t (\begin{DoxyParamCaption}\item[{const \hyperlink{classvector__t}{vector\+\_\+t}$<$ double $>$ \&}]{v,  }\item[{const double}]{eps = {\ttfamily EPS} }\end{DoxyParamCaption})}
+
+
+
+constructor de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & vector denso que se va a convertir a un vector disperso. \\
+\hline
+{\em eps} & constante que indica el error que puede permitir un cálculo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsparse__vector__t_a94f58b310542bbd9f781c6667fb89d06}\label{classsparse__vector__t_a94f58b310542bbd9f781c6667fb89d06}} 
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\subsubsection{\texorpdfstring{sparse\+\_\+vector\+\_\+t()}{sparse\_vector\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sparse\+\_\+vector\+\_\+t\+::sparse\+\_\+vector\+\_\+t (\begin{DoxyParamCaption}\item[{const \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \&}]{w }\end{DoxyParamCaption})}
+
+
+
+constructor de copia que inicializa un objeto \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} a través de la sobrecarga de operador =. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & vector del cual se le va a realizar juna copia. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsparse__vector__t_a060ab319f62aa0a6dd711f9d87d990f3}\label{classsparse__vector__t_a060ab319f62aa0a6dd711f9d87d990f3}} 
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!at@{at}}
+\index{at@{at}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& sparse\+\_\+vector\+\_\+t\+::at (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption})}
+
+
+
+getter-\/setter de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} que retorna o inicializa el valor de una posición determinada del vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & posición del vector que se desea saber o inicializar su valor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsparse__vector__t_a33f0b1b839db166e01023915c1d97d39}\label{classsparse__vector__t_a33f0b1b839db166e01023915c1d97d39}} 
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!at@{at}}
+\index{at@{at}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& sparse\+\_\+vector\+\_\+t\+::at (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+getter de la clase \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} que retorna el valor de una posición determinada del vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & posición del vector que se desea saber su valor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsparse__vector__t_a5af8b6772b5e21b427ba8db08742ff9b}\label{classsparse__vector__t_a5af8b6772b5e21b427ba8db08742ff9b}} 
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!operator=@{operator=}}
+\index{operator=@{operator=}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \& sparse\+\_\+vector\+\_\+t\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classsparse__vector__t}{sparse\+\_\+vector\+\_\+t} \&}]{w }\end{DoxyParamCaption})}
+
+
+
+sobrecarga del operador =. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & vector del cual se le van a copiar los datos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsparse__vector__t_a6ebb64d89a60aac881dcb62dfefaa398}\label{classsparse__vector__t_a6ebb64d89a60aac881dcb62dfefaa398}} 
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& sparse\+\_\+vector\+\_\+t\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption})}
+
+
+
+sobrecarga del operador \mbox{[}\mbox{]} (permite inializar o conocer un valor del vector dado por su posición) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & número que indica una posición del vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsparse__vector__t_a158bad89a8bc495ff018b32bf13fe44d}\label{classsparse__vector__t_a158bad89a8bc495ff018b32bf13fe44d}} 
+\index{sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!sparse\+\_\+vector\+\_\+t@{sparse\+\_\+vector\+\_\+t}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classpair__t}{pair\+\_\+double\+\_\+t} \& sparse\+\_\+vector\+\_\+t\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+sobrecarga constante del operador \mbox{[}\mbox{]} (permite conocer un valor del vector dado por su posición) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & número que indica una posición del vector. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sparse__vector__t_8h}{sparse\+\_\+vector\+\_\+t.\+h}\end{DoxyCompactItemize}
