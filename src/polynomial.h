@@ -101,7 +101,38 @@ double Polynomial::Eval(const double x) const {
 // Comparación si son iguales dos polinomios representados por vectores densos
 bool Polynomial::IsEqual(const Polynomial& pol, const double eps) const {
   bool differents = false;
-  // poner el código aquí
+  vector_t<double> copy_vector;
+
+  if (get_size() < pol.get_size()) {
+    copy_vector.resize(pol.get_size());
+    for (int i{0}; i < copy_vector.get_size(); ++i) {
+      if (i < get_size()) {
+        copy_vector[i] = at(i);
+      } else {
+        copy_vector[i] = 0;
+      }
+    }
+    for (int i{0}; (i < copy_vector.get_size()) && (differents == false); ++i) {
+      if (copy_vector[i] != pol[i]) {
+        differents = true;
+    }
+  }
+  } else {
+    copy_vector.resize(get_size());
+    for (int i{0}; i < copy_vector.get_size(); ++i) {
+      if (i < pol.get_size()) {
+        copy_vector[i] = pol[i];
+      } else {
+        copy_vector[i] = 0;
+      }
+    }
+    for (int i{0}; (i < copy_vector.get_size()) && (differents == false); ++i) {
+      if (copy_vector[i] != get_val(i)) {
+        differents = true;
+      }  
+    }
+  }
+
   return !differents;
 }
 
@@ -152,10 +183,18 @@ double SparsePolynomial::Eval(const double x) const {
 }
 
 // Comparación si son iguales dos polinomios representados por vectores dispersos
-bool SparsePolynomial::IsEqual(const SparsePolynomial& spol
-			       , const double eps) const {
+bool SparsePolynomial::IsEqual(const SparsePolynomial& spol, const double eps) const {
   bool differents = false;
-  // poner el código aquí
+  if (get_nz() != spol.get_nz()) {
+    differents = true;
+  }
+  for (int i{0}; (i < spol.get_nz()) && (differents == false); ++i) {
+    pair_t<double> pair1 = spol[i];
+    pair_t<double> pair2 = at(i);
+    if ((pair1.get_val() != pair2.get_val()) || (pair1.get_inx() != pair2.get_inx())) {
+      differents = true;
+    }
+  }
   return !differents;
 }
 
@@ -163,7 +202,17 @@ bool SparsePolynomial::IsEqual(const SparsePolynomial& spol
 // vector disperso y vector denso
 bool SparsePolynomial::IsEqual(const Polynomial& pol, const double eps) const {
   bool differents = false;
-  // poner el código aquí
+  SparsePolynomial spol(pol);
+  if (get_nz() != spol.get_nz()) {
+    differents = true;
+  }
+  for (int i{0}; (i < spol.get_nz()) && (differents == false); ++i) {
+    pair_t<double> pair1 = spol[i];
+    pair_t<double> pair2 = at(i);
+    if ((pair1.get_val() != pair2.get_val()) || (pair1.get_inx() != pair2.get_inx())) {
+      differents = true;
+    }
+  }
   return !differents;
 }
 
